@@ -1,4 +1,4 @@
-# React Boilerplate <img align="left" width="100" height="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2000px-React-icon.svg.png">
+# React Boilerplate
 This boilerplate includes bare minimum configuration to get a react application up and running with node/express.
 
 ## Getting Started
