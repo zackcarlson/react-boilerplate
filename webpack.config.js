@@ -1,4 +1,5 @@
 var path = require('path');
+var DashboardPlugin = require('webpack-dashboard/plugin');
 var SRC_DIR = path.join(__dirname, '/client/src');
 var DIST_DIR = path.join(__dirname, '/client/dist');
 
@@ -22,5 +23,8 @@ module.exports = {
         }
       }
     ]
-  }
+  },
+  plugins: [
+    new DashboardPlugin()
+  ]
 };
