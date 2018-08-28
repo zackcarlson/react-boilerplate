@@ -1,16 +1,12 @@
 import React from 'react';
+import Main from './Main';
+import Header from './Header';
 
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div>React Boilerplate! Woo!</div>
-    );
-  }
-}
+const App = () => (
+  <div>
+    <Header />
+    <Main />
+  </div>
+)
 
 export default App;
