@@ -1,31 +1,40 @@
 body {
   margin: 0;
   padding: 0;
+  background: white;
 }
 
-/* The navigation bar */
+h1 {
+  color: rgb(31, 31, 223);
+  font-family: 'Yeseva One';
+  text-align: center;
+}
+
 nav {
   overflow: hidden;
-  background-color: #333;
+  text-align: center;
+  background-color: transparent;
   position: fixed; 
   top: 0;
   width: 100%;
 }
 
 nav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
+  display: inline-block;
+  color: rgb(250, 33, 33);
   text-align: center;
-  padding: 14px 16px;
+  padding: 24px 16px;
+  margin-top: 20px;
   text-decoration: none;
+  font-family: 'Josefin Sans';
+  font-size: 12px;
 }
 
 nav a:hover {
-  background: #ddd;
+  background: transparent;
   color: black;
 }
 
 #app {
-  margin-top: 70px;
+  margin-top: 90px;
 }

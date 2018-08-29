@@ -1,10 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+const log = () => {
+  console.log('clicked');
+};
+
 const Header = () => (
   <nav className='navbar'>
-    <NavLink to='/'>Home</NavLink>
-    <NavLink to='/instructions'>Instructions</NavLink>
+    <NavLink to='/' onClick={log}>HOME</NavLink>
+    <NavLink to='/instructions'>INSTRUCTIONS</NavLink>
   </nav>
 )
 
