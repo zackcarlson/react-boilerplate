@@ -1,0 +1,43 @@
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms linear 150ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 150ms linear;
+}
+
+nav {
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  position: fixed; 
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  color: rgb(250, 33, 33);
+  text-align: center;
+  padding: 24px 16px;
+  margin-top: 20px;
+  text-decoration: none;
+  font-family: 'Josefin Sans';
+  font-size: 12px;
+}
+
+nav a:hover {
+  background: transparent;
+  color: black;
+}
