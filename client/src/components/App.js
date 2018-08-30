@@ -14,20 +14,6 @@ import Instructions from './Instructions';
 import '../css/App.css';
 
 export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      navItems: { '/': 0, '/instructions': 1 }
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(location) {
-    if (this.state.navItems[location.pathname]) {
-      console.log(this.state.navItems[location.pathname]);
-    }
-  }
-
   render() {
     const activeNav = { 
       fontWeight: 'bold',
@@ -35,12 +21,12 @@ export default class App extends Component {
       textDecorationColor: 'blue',
       textDecorationStyle: 'double',
     }; 
-    
+
     return (
       <Router>
         <Route render={({location}) => (
           <div>
-            <nav className='navbar' onClick={this.handleClick(location)}>
+            <nav className='navbar'>
               <NavLink exact to='/' activeStyle={activeNav}>HOME</NavLink>
               <NavLink exact to='/instructions' activeStyle={activeNav}>INSTRUCTIONS</NavLink>
             </nav>
